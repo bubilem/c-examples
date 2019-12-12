@@ -8,10 +8,8 @@ Příklady jsou tvořeny ve Visual Studio Code s moduly C/C++ for Visual Studio 
 
 ## Patch Notes
 
-### 10. 10. 2019
+- **10. 10. 2019** - cykly.c, sachovnice.c
 
-cykly.c, sachovnice.c
+- **28. 9. 2019** - bmi.c, bubble_sort.c, fibonacci.c, hello_world.c, hod_kostkou.c, jednoducha_geometrie.c, kvadraticka_robvnice.c, nasobilka.c
 
-### 28. 9. 2019
-
-bmi.c, bubble_sort.c, fibonacci.c, hello_world.c, hod_kostkou.c, jednoducha_geometrie.c, kvadraticka_robvnice.c, nasobilka.c
+- **12. 12. 2019** - aritmeticke_operace.c, deleni_a_vstup.c, floats_magic.c, hod_kostkou_pole.c, hod_kostkou.c(update), interval.c, nasobilka_fce.c, podminky.c, procent.c, prvocislo.c
