@@ -17,3 +17,5 @@ Příklady jsou tvořeny ve Visual Studio Code s moduly C/C++ for Visual Studio 
 - **10. 1. 2020** - fin_calc.c, pole.c, sort_fce.c
 
 - **23. 1. 2020** - distance.c, pointer.c
+
+- **20. 4. 2020** - uverova_kalkulacka.c
