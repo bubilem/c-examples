@@ -1,39 +1,35 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <math.h>
-
-int jePrvocislo(int n)
-{
-    switch (n)
-    {
-    case 0:
-    case 1:
-        return 0;
-    default:
-        for (int i = 2; i <= ceil(sqrt(abs(n))); i++)
-        {
-            if (n % i == 0)
-            {
-                return 0;
-            }
-        }
-        return 1;
-    }
-}
-
-void vypisPrvocisla(int min, int max)
-{
-    for (int i = min; i <= max; i++)
-    {
-        if (jePrvocislo(i))
-        {
-            printf("%s%i", i > min ? " " : "", i);
-        }
-    }
-}
 
 int main()
 {
-    printf("\n\nVypis prvocisel: ");
-    vypisPrvocisla(1000, 2000);
+
+    int cislo = 21;
+    int jePrvocislo = 1;
+
+    if (cislo < 2)
+    {
+        jePrvocislo = 0;
+    }
+    else if (cislo > 2)
+    {
+        for (int i = 2; i < cislo; i++)
+        {
+            if (cislo % i == 0)
+            {
+                jePrvocislo = 0;
+                break;
+            }
+        }
+    }
+    if (jePrvocislo == 1)
+    {
+        printf("\n%i je prvocislo.\n\n", cislo);
+    }
+    else
+    {
+        printf("\n%i neni prvocislo.\n\n", cislo);
+    }
     return 0;
 }
