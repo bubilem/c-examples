@@ -1,3 +1,4 @@
 /.vscode
-work.*
+work*.*
+temp*.*
 *.exe

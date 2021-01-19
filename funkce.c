@@ -2,11 +2,13 @@
 #include <stdio.h>
 #include <math.h>
 
-void hello(){
+void hi()
+{
     printf("Hello\n");
 }
 
-void println(char text[]){
+void println(char text[])
+{
     printf("%s\n", text);
 }
 
@@ -27,7 +29,7 @@ double velVek3D(int x, int y, int z)
 
 int main()
 {
-    hello();
+    hi();
     printf("%f\n", velVek3D(-2, 3, 4));
     println("Konec.");
     return 0;
