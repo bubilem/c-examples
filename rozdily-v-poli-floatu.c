@@ -4,18 +4,17 @@
 
 int main()
 {
-    int size = 5;
+    int size = 12;
     float pole_cisel[size];
     float pole_rozdilu[size - 1];
-    char space[] = "     ";
     srand(time(NULL));
     printf("Prvky pole a rozdily sousedu:\n");
     for (int i = 0; i < size; i++)
     {
         pole_cisel[i] = (rand() % 10000) / 100.;
-        printf("%05.2f%s", pole_cisel[i], space);
+        printf("%05.2f     ", pole_cisel[i]);
     }
-    printf("\n%s", space);
+    printf("\n");
     for (int i = 0; i < size - 1; i++)
     {
         pole_rozdilu[i] = pole_cisel[i] - pole_cisel[i + 1];
@@ -23,7 +22,7 @@ int main()
         {
             pole_rozdilu[i] *= -1;
         }
-        printf("%05.2f%s", pole_rozdilu[i], space);
+        printf("     %05.2f", pole_rozdilu[i]);
     }
     return 0;
 }
