@@ -3,7 +3,7 @@
 #include <time.h>
 #include <math.h>
 
-#define COUNT 3
+#define COUNT 5
 
 char rndChar(char *itms, int *cnts)
 {
@@ -33,19 +33,19 @@ char totalRndChar(char *itms, int *cnts)
 
 int main()
 {
-    char itms[COUNT] = {'A', 'B', 'C'};
+    char itms[COUNT] = {'A', 'B', 'C', 'D', 'E'};
     int cnts[COUNT] = {0};
     srand(time(NULL));
     for (int i = 0; i < 50; i++)
     {
-        //printf("%c ", rndChar(itms, cnts));
-        printf("%c ", totalRndChar(itms, cnts));
+        printf("%c ", rndChar(itms, cnts));
+        //printf("%c ", totalRndChar(itms, cnts));
     }
 
     puts("");
     for (int i = 0; i < COUNT; i++)
     {
-        printf("%c - %d\n", *(itms + i), *(cnts + i));
+        printf("%c - %d\n", itms[i], cnts[i]);
     }
     return 0;
 }
